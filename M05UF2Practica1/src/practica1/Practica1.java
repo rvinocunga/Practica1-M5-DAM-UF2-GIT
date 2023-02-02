@@ -99,22 +99,9 @@ public class Practica1 {
             } while (comprobar != true);
 
             System.out.println("(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
-            System.out.println("\nVols continuar operant? [s/n]");
-            do {
-                comprobar = true;
-                operacion = sc.nextLine();
-
-                switch (operacion) {
-                    case "s":
-                    case "S":
-                    case "n":
-                    case "N":
-                        break;
-                    default:
-                        System.err.println("\nError, posa un valor vàlid.");
-                        comprobar = false;
-                }
-            } while (comprobar != true);
+            
+            Metodos.demanar(comprobar, operacion);
+            
             System.out.println("");
         } while (operacion.equals("s") || operacion.equals("S"));
     }
