@@ -81,8 +81,7 @@ public class Practica1 {
                         res = n1 / n2;
                         break;
                     case "*":
-                        res = Math.pow(n1, n25
-                        );
+                       res = Math.pow(n1, n2);
                         break;
                     case "%":
                         while (n2 == 0) {
